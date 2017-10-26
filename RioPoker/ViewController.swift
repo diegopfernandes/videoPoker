@@ -48,6 +48,8 @@ class ViewController: UIViewController {
     //---
     var chances = 2
     //---
+    let saveScore = UserDefaultsManager()
+    //---
     let pokerHands = PokerHands()
     //---
     var handToAnalyse = [(0, ""), (0, ""), (0, ""), (0, ""), (0, "")]
