@@ -384,6 +384,20 @@ class ViewController: UIViewController {
         chances = 2
         //---
     }
+    @IBAction func resetGame(_ sender: UIButton) {
+        if sender.tag == 99 {
+            bet = 0
+            betLabel.text = "MISE : \(bet)"
+            credits = 2000
+            creditsLabel.text = "CRÉDITS : \(credits)"
+            dealButton.alpha = 1.0
+            resetBackOfCards()
+            tempLabel.text = "BONNE CHANCE!"
+            return
+        }
+
+    
     //----------------------//----------------------
-}
+    }
 //----------------------//----------------------
+}
