@@ -179,7 +179,7 @@ class ViewController: UIViewController {
             }
         }
         //---
-        Timer.scheduledTimer(timeInterval: 2.55,
+        Timer.scheduledTimer(timeInterval: 2.75,
                              target: self,
                              selector: #selector(displayRandomCards),
                              userInfo: nil,
