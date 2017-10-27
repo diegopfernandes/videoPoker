@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="couture-bld.otf">
+            <string>Couture-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RioPoker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7iS-Rt-W6D">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fPX-Yr-pZi" userLabel="slot_1">
+                                <rect key="frame" x="15" y="102" width="121" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="zqs-Dy-36T">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCq-9z-5Wz">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NqF-ht-OrG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXB-yH-WxR">
+                                        <rect key="frame" x="8" y="172" width="105" height="21"/>
+                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.03840301283" blue="0.1164034362" alpha="0.4868507923" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="VXB-yH-WxR" secondAttribute="bottom" constant="7" id="4V2-Rq-2ev"/>
+                                    <constraint firstItem="VXB-yH-WxR" firstAttribute="leading" secondItem="fPX-Yr-pZi" secondAttribute="leading" constant="8" id="4h7-fe-3uZ"/>
+                                    <constraint firstItem="VXB-yH-WxR" firstAttribute="top" secondItem="BCq-9z-5Wz" secondAttribute="bottom" constant="8" id="6dR-dc-gvv"/>
+                                    <constraint firstAttribute="trailing" secondItem="VXB-yH-WxR" secondAttribute="trailing" constant="8" id="BE0-EU-eAc"/>
+                                    <constraint firstItem="BCq-9z-5Wz" firstAttribute="top" secondItem="fPX-Yr-pZi" secondAttribute="top" constant="3" id="Bp7-ED-ffO"/>
+                                    <constraint firstItem="zqs-Dy-36T" firstAttribute="top" secondItem="fPX-Yr-pZi" secondAttribute="top" constant="3" id="G80-Ww-Cih"/>
+                                    <constraint firstItem="VXB-yH-WxR" firstAttribute="top" secondItem="BCq-9z-5Wz" secondAttribute="bottom" constant="8" id="LYP-qf-21P"/>
+                                    <constraint firstAttribute="trailing" secondItem="zqs-Dy-36T" secondAttribute="trailing" constant="3" id="V09-r5-9qS"/>
+                                    <constraint firstAttribute="trailing" secondItem="BCq-9z-5Wz" secondAttribute="trailing" constant="3" id="jHw-g8-AXG"/>
+                                    <constraint firstItem="zqs-Dy-36T" firstAttribute="leading" secondItem="fPX-Yr-pZi" secondAttribute="leading" constant="3" id="pLn-Ri-ehV"/>
+                                    <constraint firstItem="BCq-9z-5Wz" firstAttribute="leading" secondItem="fPX-Yr-pZi" secondAttribute="leading" constant="3" id="poe-mo-lHI"/>
+                                    <constraint firstItem="VXB-yH-WxR" firstAttribute="top" secondItem="zqs-Dy-36T" secondAttribute="bottom" constant="8" id="vmo-ew-eXJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rsr-Pz-8lA" userLabel="slot_2">
+                                <rect key="frame" x="144" y="102" width="121" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="qIC-3S-eDd">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpI-gB-z8K">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e68-sq-BEn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Euj-DH-lyQ">
+                                        <rect key="frame" x="8" y="172" width="105" height="21"/>
+                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.03840301283" blue="0.1164034362" alpha="0.4868507923" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TpI-gB-z8K" secondAttribute="trailing" constant="3" id="4ei-fv-Qsf"/>
+                                    <constraint firstAttribute="bottom" secondItem="Euj-DH-lyQ" secondAttribute="bottom" constant="7" id="53O-7I-5ed"/>
+                                    <constraint firstItem="qIC-3S-eDd" firstAttribute="leading" secondItem="Rsr-Pz-8lA" secondAttribute="leading" constant="3" id="DyJ-Zb-GT3"/>
+                                    <constraint firstItem="TpI-gB-z8K" firstAttribute="top" secondItem="Rsr-Pz-8lA" secondAttribute="top" constant="3" id="N9C-al-jGf"/>
+                                    <constraint firstItem="qIC-3S-eDd" firstAttribute="top" secondItem="Rsr-Pz-8lA" secondAttribute="top" constant="3" id="Okv-i1-3hx"/>
+                                    <constraint firstItem="Euj-DH-lyQ" firstAttribute="top" secondItem="TpI-gB-z8K" secondAttribute="bottom" constant="8" id="gOu-fT-xI4"/>
+                                    <constraint firstItem="TpI-gB-z8K" firstAttribute="leading" secondItem="Rsr-Pz-8lA" secondAttribute="leading" constant="3" id="i5u-md-lys"/>
+                                    <constraint firstItem="Euj-DH-lyQ" firstAttribute="top" secondItem="TpI-gB-z8K" secondAttribute="bottom" constant="8" id="jyv-7a-Gxi"/>
+                                    <constraint firstItem="Euj-DH-lyQ" firstAttribute="leading" secondItem="Rsr-Pz-8lA" secondAttribute="leading" constant="8" id="kpq-5V-4SC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Euj-DH-lyQ" secondAttribute="trailing" constant="8" id="mNv-jv-jh9"/>
+                                    <constraint firstItem="Euj-DH-lyQ" firstAttribute="top" secondItem="qIC-3S-eDd" secondAttribute="bottom" constant="8" id="nxl-5x-m6J"/>
+                                    <constraint firstAttribute="trailing" secondItem="qIC-3S-eDd" secondAttribute="trailing" constant="3" id="tEG-Re-iF5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOz-vS-vEf" userLabel="slot_3">
+                                <rect key="frame" x="273" y="102" width="121" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="YHb-KB-2ED">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYc-rv-OQq">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUh-vi-Xdf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBK-y9-aV1">
+                                        <rect key="frame" x="8" y="171" width="105" height="21"/>
+                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.03840301283" blue="0.1164034362" alpha="0.4868507923" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KBK-y9-aV1" secondAttribute="trailing" constant="8" id="3QW-aP-K4a"/>
+                                    <constraint firstItem="KBK-y9-aV1" firstAttribute="top" secondItem="YHb-KB-2ED" secondAttribute="bottom" constant="7" id="Ej9-ih-K4J"/>
+                                    <constraint firstAttribute="trailing" secondItem="YHb-KB-2ED" secondAttribute="trailing" constant="3" id="GNr-fd-0fA"/>
+                                    <constraint firstItem="yYc-rv-OQq" firstAttribute="leading" secondItem="TOz-vS-vEf" secondAttribute="leading" constant="3" id="H6C-s5-PHS"/>
+                                    <constraint firstItem="KBK-y9-aV1" firstAttribute="leading" secondItem="TOz-vS-vEf" secondAttribute="leading" constant="8" id="SOV-9K-yIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="yYc-rv-OQq" secondAttribute="trailing" constant="3" id="T9g-rZ-wSY"/>
+                                    <constraint firstAttribute="bottom" secondItem="KBK-y9-aV1" secondAttribute="bottom" constant="8" id="e8x-A3-lye"/>
+                                    <constraint firstItem="KBK-y9-aV1" firstAttribute="top" secondItem="yYc-rv-OQq" secondAttribute="bottom" constant="7" id="flI-fP-t8N"/>
+                                    <constraint firstItem="yYc-rv-OQq" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" constant="3" id="kKT-8k-mLq"/>
+                                    <constraint firstItem="YHb-KB-2ED" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" constant="3" id="ouI-pv-Rme"/>
+                                    <constraint firstItem="YHb-KB-2ED" firstAttribute="leading" secondItem="TOz-vS-vEf" secondAttribute="leading" constant="3" id="pfS-RR-v0W"/>
+                                    <constraint firstItem="KBK-y9-aV1" firstAttribute="top" secondItem="yYc-rv-OQq" secondAttribute="bottom" constant="7" id="zhS-2z-Hwp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="la3-rq-29O" userLabel="slot_4">
+                                <rect key="frame" x="402" y="102" width="121" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="6XK-JL-x1g">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppb-qA-lJZ">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b8C-y2-MYu"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmY-6z-9tr">
+                                        <rect key="frame" x="8" y="171" width="105" height="21"/>
+                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.03840301283" blue="0.1164034362" alpha="0.4868507923" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ppb-qA-lJZ" secondAttribute="trailing" constant="3" id="97J-g1-x2T"/>
+                                    <constraint firstItem="UmY-6z-9tr" firstAttribute="leading" secondItem="la3-rq-29O" secondAttribute="leading" constant="8" id="9Ik-qn-dlm"/>
+                                    <constraint firstAttribute="bottom" secondItem="UmY-6z-9tr" secondAttribute="bottom" constant="8" id="A83-EL-ACe"/>
+                                    <constraint firstAttribute="trailing" secondItem="6XK-JL-x1g" secondAttribute="trailing" constant="3" id="C6b-0h-zVJ"/>
+                                    <constraint firstItem="6XK-JL-x1g" firstAttribute="leading" secondItem="la3-rq-29O" secondAttribute="leading" constant="3" id="KFb-CF-NTp"/>
+                                    <constraint firstItem="ppb-qA-lJZ" firstAttribute="top" secondItem="la3-rq-29O" secondAttribute="top" constant="3" id="Srz-vh-EoU"/>
+                                    <constraint firstItem="ppb-qA-lJZ" firstAttribute="leading" secondItem="la3-rq-29O" secondAttribute="leading" constant="3" id="THQ-CS-y58"/>
+                                    <constraint firstItem="UmY-6z-9tr" firstAttribute="top" secondItem="ppb-qA-lJZ" secondAttribute="bottom" constant="7" id="Zgq-iF-qN3"/>
+                                    <constraint firstItem="6XK-JL-x1g" firstAttribute="top" secondItem="la3-rq-29O" secondAttribute="top" constant="3" id="c42-k3-xzh"/>
+                                    <constraint firstItem="UmY-6z-9tr" firstAttribute="top" secondItem="ppb-qA-lJZ" secondAttribute="bottom" constant="7" id="dA1-Jb-6Hh"/>
+                                    <constraint firstAttribute="trailing" secondItem="UmY-6z-9tr" secondAttribute="trailing" constant="8" id="hdL-Tj-ZHT"/>
+                                    <constraint firstItem="UmY-6z-9tr" firstAttribute="top" secondItem="6XK-JL-x1g" secondAttribute="bottom" constant="7" id="mvp-8w-oAQ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpl-Ud-Sho" userLabel="slot_5">
+                                <rect key="frame" x="531" y="102" width="121" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="jHN-yw-kol">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-KH-egs">
+                                        <rect key="frame" x="3" y="3" width="115" height="161"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXd-zd-EGq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUe-fD-FSU">
+                                        <rect key="frame" x="8" y="171" width="105" height="21"/>
+                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.03840301283" blue="0.1164034362" alpha="0.4868507923" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jHN-yw-kol" firstAttribute="top" secondItem="jpl-Ud-Sho" secondAttribute="top" constant="3" id="9qq-Fs-7ET"/>
+                                    <constraint firstItem="wUe-fD-FSU" firstAttribute="top" secondItem="LY1-KH-egs" secondAttribute="bottom" constant="7" id="C2j-Ix-Mf0"/>
+                                    <constraint firstAttribute="trailing" secondItem="LY1-KH-egs" secondAttribute="trailing" constant="3" id="LJU-S7-rqI"/>
+                                    <constraint firstItem="LY1-KH-egs" firstAttribute="leading" secondItem="jpl-Ud-Sho" secondAttribute="leading" constant="3" id="QFn-Hs-Gs9"/>
+                                    <constraint firstItem="wUe-fD-FSU" firstAttribute="top" secondItem="jHN-yw-kol" secondAttribute="bottom" constant="7" id="Spz-mr-MLv"/>
+                                    <constraint firstItem="jHN-yw-kol" firstAttribute="leading" secondItem="jpl-Ud-Sho" secondAttribute="leading" constant="3" id="bKj-Nv-fWV"/>
+                                    <constraint firstItem="LY1-KH-egs" firstAttribute="top" secondItem="jpl-Ud-Sho" secondAttribute="top" constant="3" id="bxE-E1-ou6"/>
+                                    <constraint firstAttribute="trailing" secondItem="wUe-fD-FSU" secondAttribute="trailing" constant="8" id="fwg-hk-CAk"/>
+                                    <constraint firstItem="wUe-fD-FSU" firstAttribute="top" secondItem="LY1-KH-egs" secondAttribute="bottom" constant="7" id="iZC-3E-CPg"/>
+                                    <constraint firstAttribute="trailing" secondItem="jHN-yw-kol" secondAttribute="trailing" constant="3" id="x8d-Jf-Wbg"/>
+                                    <constraint firstAttribute="bottom" secondItem="wUe-fD-FSU" secondAttribute="bottom" constant="8" id="yfK-iy-hEv"/>
+                                    <constraint firstItem="wUe-fD-FSU" firstAttribute="leading" secondItem="jpl-Ud-Sho" secondAttribute="leading" constant="8" id="zO6-YW-Q0R"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="99" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIC-vP-SSJ">
+                                <rect key="frame" x="17" y="310" width="117" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="RECOMMENCER" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6x-7c-M9I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kl-U6-DLt">
+                                <rect key="frame" x="146" y="310" width="117" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="MISER 25" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gek-0W-wPK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEi-Iq-SGY">
+                                <rect key="frame" x="275" y="310" width="117" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="MISER 100" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNl-ev-KPU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrS-Op-iRt">
+                                <rect key="frame" x="404" y="310" width="117" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="MISER TOUT" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw1-Xo-ITD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-hk-IQ9">
+                                <rect key="frame" x="533" y="310" width="117" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="DISTRIBUER" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="riL-Iw-rLk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CRÉDITS: 2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-e8-5jD">
+                                <rect key="frame" x="491" y="23" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BONNE CHANCE!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O81-dY-jxd">
+                                <rect key="frame" x="493" y="67" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                <color key="textColor" red="0.8156859278678894" green="0.36779442429542542" blue="0.1626548171043396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MISE: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mv3-Fl-ylO">
+                                <rect key="frame" x="493" y="44" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="betLabel" destination="mv3-Fl-ylO" id="vnA-kG-0ah"/>
+                        <outlet property="bg_1" destination="fPX-Yr-pZi" id="WJ5-2K-IzL"/>
+                        <outlet property="bg_2" destination="Rsr-Pz-8lA" id="FyQ-Pb-78q"/>
+                        <outlet property="bg_3" destination="TOz-vS-vEf" id="X8H-w5-3DJ"/>
+                        <outlet property="bg_4" destination="la3-rq-29O" id="Vp5-K2-BpU"/>
+                        <outlet property="bg_5" destination="jpl-Ud-Sho" id="3Tk-Pd-MPi"/>
+                        <outlet property="creditsLabel" destination="gWg-e8-5jD" id="znL-Km-L0d"/>
+                        <outlet property="dealButton" destination="4WB-hk-IQ9" id="p4x-xd-XWo"/>
+                        <outlet property="keep_1" destination="VXB-yH-WxR" id="VtH-FJ-Yle"/>
+                        <outlet property="keep_2" destination="Euj-DH-lyQ" id="wf9-M0-m5r"/>
+                        <outlet property="keep_3" destination="KBK-y9-aV1" id="1TL-LQ-jzi"/>
+                        <outlet property="keep_4" destination="UmY-6z-9tr" id="BJ7-lv-slW"/>
+                        <outlet property="keep_5" destination="wUe-fD-FSU" id="kXc-IK-gf4"/>
+                        <outlet property="slot_1" destination="zqs-Dy-36T" id="CnL-YF-MNN"/>
+                        <outlet property="slot_2" destination="qIC-3S-eDd" id="Ixl-LW-ufQ"/>
+                        <outlet property="slot_3" destination="YHb-KB-2ED" id="6Fg-hB-4ut"/>
+                        <outlet property="slot_4" destination="6XK-JL-x1g" id="dOH-vx-UX1"/>
+                        <outlet property="slot_5" destination="jHN-yw-kol" id="vlP-2R-jAE"/>
+                        <outlet property="tempLabel" destination="O81-dY-jxd" id="Dz4-0N-Kph"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="127.2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="533" height="797"/>
+        <image name="background.png" width="2500" height="1369"/>
+        <image name="buttons.png" width="756" height="299"/>
+    </resources>
+</document>
