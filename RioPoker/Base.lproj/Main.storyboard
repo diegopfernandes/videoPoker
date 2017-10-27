@@ -28,9 +28,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7iS-Rt-W6D">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7iS-Rt-W6D">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPX-Yr-pZi" userLabel="slot_1">
                                 <rect key="frame" x="15" y="110" width="121" height="200"/>
@@ -300,6 +299,7 @@
                             <constraint firstItem="AEi-Iq-SGY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.175412" id="7mc-zh-56H"/>
                             <constraint firstItem="VrS-Op-iRt" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="7o8-5E-LrQ"/>
                             <constraint firstItem="VrS-Op-iRt" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="D0d-sd-p1K"/>
+                            <constraint firstItem="7iS-Rt-W6D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EHp-b8-xpU"/>
                             <constraint firstItem="vIC-vP-SSJ" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="F85-ks-M2h"/>
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="leading" secondItem="la3-rq-29O" secondAttribute="trailing" constant="8" id="GGR-DX-ipW"/>
                             <constraint firstItem="VrS-Op-iRt" firstAttribute="leading" secondItem="AEi-Iq-SGY" secondAttribute="trailing" constant="10" id="GeF-ZM-PMF"/>
@@ -308,6 +308,8 @@
                             <constraint firstItem="la3-rq-29O" firstAttribute="width" secondItem="TOz-vS-vEf" secondAttribute="width" id="Mgr-WS-Tmo"/>
                             <constraint firstItem="7Kl-U6-DLt" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="Mxa-Ph-GMc"/>
                             <constraint firstItem="AEi-Iq-SGY" firstAttribute="leading" secondItem="7Kl-U6-DLt" secondAttribute="trailing" constant="10" id="N2N-5T-4JH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7iS-Rt-W6D" secondAttribute="bottom" id="NPi-d6-44l"/>
+                            <constraint firstItem="7iS-Rt-W6D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nj1-6r-sE1"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="Qvo-cN-Fdt"/>
                             <constraint firstItem="vIC-vP-SSJ" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="RMG-33-M9y"/>
                             <constraint firstItem="4WB-hk-IQ9" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="VLH-m8-7xA"/>
@@ -325,6 +327,7 @@
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="jgn-F0-WVl"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="mBe-Zn-NgO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" multiplier="3.40909" id="qix-KM-1Sb"/>
+                            <constraint firstAttribute="trailing" secondItem="7iS-Rt-W6D" secondAttribute="trailing" id="sMe-Yb-SRg"/>
                             <constraint firstItem="7Kl-U6-DLt" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="ueI-Kq-siL"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="vaR-eB-za8"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="x8t-Ls-4fU"/>
