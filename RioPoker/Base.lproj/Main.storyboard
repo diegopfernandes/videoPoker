@@ -216,9 +216,8 @@
                                     <constraint firstItem="jHN-yw-kol" firstAttribute="top" secondItem="jpl-Ud-Sho" secondAttribute="top" constant="3" id="zXX-fa-Mx6"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" tag="99" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIC-vP-SSJ">
-                                <rect key="frame" x="17" y="310" width="117" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIC-vP-SSJ">
+                                <rect key="frame" x="21" y="310" width="117" height="45"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
                                 <state key="normal" title="RECOMMENCER" backgroundImage="buttons.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -227,31 +226,8 @@
                                     <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6x-7c-M9I"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kl-U6-DLt">
-                                <rect key="frame" x="146" y="310" width="117" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="MISER 25" backgroundImage="buttons.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gek-0W-wPK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEi-Iq-SGY">
-                                <rect key="frame" x="275" y="310" width="117" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="MISER 100" backgroundImage="buttons.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNl-ev-KPU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrS-Op-iRt">
-                                <rect key="frame" x="404" y="310" width="117" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrS-Op-iRt">
+                                <rect key="frame" x="402" y="310" width="117" height="45"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
                                 <state key="normal" title="MISER TOUT" backgroundImage="buttons.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -260,9 +236,8 @@
                                     <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aw1-Xo-ITD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-hk-IQ9">
-                                <rect key="frame" x="533" y="310" width="117" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-hk-IQ9">
+                                <rect key="frame" x="529" y="310" width="117" height="45"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
                                 <state key="normal" title="DISTRIBUER" backgroundImage="buttons.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,23 +267,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kl-U6-DLt">
+                                <rect key="frame" x="148" y="310" width="117" height="45"/>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="MISER 25" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gek-0W-wPK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEi-Iq-SGY">
+                                <rect key="frame" x="275" y="310" width="117" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="height" multiplier="13:5" id="J1q-bF-FjM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
+                                <state key="normal" title="MISER 100" backgroundImage="buttons.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TNl-ev-KPU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fPX-Yr-pZi" firstAttribute="width" secondItem="TOz-vS-vEf" secondAttribute="width" id="1Jf-1R-SZk"/>
+                            <constraint firstItem="7Kl-U6-DLt" firstAttribute="leading" secondItem="vIC-vP-SSJ" secondAttribute="trailing" constant="10" id="3GN-A7-7aU"/>
+                            <constraint firstItem="4WB-hk-IQ9" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="4MK-Op-xuM"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="leading" secondItem="TOz-vS-vEf" secondAttribute="trailing" constant="8" id="5NT-8w-pBA"/>
+                            <constraint firstItem="AEi-Iq-SGY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.175412" id="7mc-zh-56H"/>
+                            <constraint firstItem="VrS-Op-iRt" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="7o8-5E-LrQ"/>
+                            <constraint firstItem="VrS-Op-iRt" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="D0d-sd-p1K"/>
+                            <constraint firstItem="vIC-vP-SSJ" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="F85-ks-M2h"/>
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="leading" secondItem="la3-rq-29O" secondAttribute="trailing" constant="8" id="GGR-DX-ipW"/>
+                            <constraint firstItem="VrS-Op-iRt" firstAttribute="leading" secondItem="AEi-Iq-SGY" secondAttribute="trailing" constant="10" id="GeF-ZM-PMF"/>
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="width" secondItem="TOz-vS-vEf" secondAttribute="width" id="GhT-cB-Q80"/>
                             <constraint firstItem="TOz-vS-vEf" firstAttribute="leading" secondItem="Rsr-Pz-8lA" secondAttribute="trailing" constant="8" id="Grz-gC-QhI"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="width" secondItem="TOz-vS-vEf" secondAttribute="width" id="Mgr-WS-Tmo"/>
+                            <constraint firstItem="7Kl-U6-DLt" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="Mxa-Ph-GMc"/>
+                            <constraint firstItem="AEi-Iq-SGY" firstAttribute="leading" secondItem="7Kl-U6-DLt" secondAttribute="trailing" constant="10" id="N2N-5T-4JH"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="Qvo-cN-Fdt"/>
+                            <constraint firstItem="vIC-vP-SSJ" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="RMG-33-M9y"/>
+                            <constraint firstItem="4WB-hk-IQ9" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="VLH-m8-7xA"/>
+                            <constraint firstItem="4WB-hk-IQ9" firstAttribute="leading" secondItem="VrS-Op-iRt" secondAttribute="trailing" constant="10" id="Xbi-Xp-W0Y"/>
                             <constraint firstItem="fPX-Yr-pZi" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="bgy-cy-3hA"/>
+                            <constraint firstItem="VrS-Op-iRt" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="cUZ-El-taX"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="leading" secondItem="fPX-Yr-pZi" secondAttribute="trailing" constant="8" id="e9m-mh-Qq3"/>
+                            <constraint firstItem="vIC-vP-SSJ" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="fKS-Xf-gZt"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="width" secondItem="TOz-vS-vEf" secondAttribute="width" id="fMx-ou-eg8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="bottom" constant="20" id="gpv-LI-8hZ"/>
+                            <constraint firstItem="4WB-hk-IQ9" firstAttribute="height" secondItem="AEi-Iq-SGY" secondAttribute="height" id="h4d-Wd-wRn"/>
+                            <constraint firstItem="AEi-Iq-SGY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hA0-G7-DUX"/>
+                            <constraint firstItem="7Kl-U6-DLt" firstAttribute="width" secondItem="AEi-Iq-SGY" secondAttribute="width" id="hs5-vX-bKv"/>
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="i0s-XX-1BI"/>
                             <constraint firstItem="jpl-Ud-Sho" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="jgn-F0-WVl"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" id="mBe-Zn-NgO"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TOz-vS-vEf" secondAttribute="top" multiplier="3.40909" id="qix-KM-1Sb"/>
+                            <constraint firstItem="7Kl-U6-DLt" firstAttribute="top" secondItem="AEi-Iq-SGY" secondAttribute="top" id="ueI-Kq-siL"/>
                             <constraint firstItem="Rsr-Pz-8lA" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="vaR-eB-za8"/>
                             <constraint firstItem="la3-rq-29O" firstAttribute="height" secondItem="TOz-vS-vEf" secondAttribute="height" id="x8t-Ls-4fU"/>
                             <constraint firstItem="TOz-vS-vEf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.181409" id="xaB-Zi-u2N"/>
